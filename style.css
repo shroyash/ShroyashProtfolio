@@ -40,23 +40,22 @@ nav {
   height: 17vh;
 }
 
-.nav-links {
+.nav-links{
   gap: 2rem;
   list-style: none;
   font-size: 1.3rem;
+  text-decoration: none;
+  color: black;
 }
 
 a {
   color: black;
   text-decoration: none;
-  text-decoration-color: white;
 }
 
 a:hover {
   color: grey;
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+
 }
 
 .logo {
@@ -502,17 +501,12 @@ footer p {
   margin-top: -15px;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  gap: 110px;
-}
 
 .card {
   background-color: #f9f9f9;
   padding: 60px;
   border-radius: 70px;
-  width: 800px;
+  width: 600px;
   text-align: center;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   margin-top: 40px;
@@ -533,4 +527,8 @@ footer p {
 .card p {
   font-size: 16px;
   color: #333;
+}
+a{
+  text-decoration: none;
+  color: black;
 }
