@@ -40,6 +40,7 @@
         </div>
       </div>
     </nav>
+
     <section id="profile">
       <div class="section__pic-container">
         <img src="./assets/shroyash3.png" alt="shroyash profile picture" />
@@ -51,7 +52,7 @@
         <div class="btn-container">
           <button
             class="btn btn-color-2"
-            onclick="alert('Oops! CV is coming soon')"
+            onclick="alert('CV is coming soon')"
           >
             Download CV
           </button>
@@ -61,110 +62,76 @@
         </div>
         <div id="socials-container">
           <div class="tooltip">
-            <img
-              src="./assets/linkedin.png"
-              alt="My LinkedIn profile"
-              class="icon"
-              onclick="location.href='https://www.linkedin.com/in/shroyash-shrestha-3862b2254/'"
-            />
+            <a href="https://www.linkedin.com/in/shroyash-shrestha-3862b2254/" target="_blank">
+              <img
+                src="./assets/linkedin.png"
+                alt="My LinkedIn profile"
+                class="icon"
+              />
+            </a>
             <span class="tooltiptext">LinkedIn</span>
           </div>
-
+        
           <div class="tooltip">
-            <img
-              src="./assets/github.png"
-              alt="My GitHub profile"
-              class="icon"
-              onclick="location.href='https://github.com/shroyash'"
-            />
+            <a href="https://github.com/shroyash" target="_blank">
+              <img
+                src="./assets/github.png"
+                alt="My GitHub profile"
+                class="icon"
+              />
+            </a>
             <span class="tooltiptext">GitHub</span>
           </div>
-
+        
           <div class="tooltip">
-            <img
-              src="./assets/leetcode.png"
-              alt="My LeetCode profile"
-              class="icon"
-              style="border-radius: 50%; height: 35px; width: 40px"
-              onclick="location.href='https://leetcode.com/shroyash'"
-            />
+            <a href="https://leetcode.com/shroyash" target="_blank">
+              <img
+                src="./assets/leetcode.png"
+                alt="My LeetCode profile"
+                class="icon"
+                style="border-radius: 50%; height: 35px; width: 40px"
+              />
+            </a>
             <span class="tooltiptext">LeetCode</span>
           </div>
         </div>
+        
       </div>
     </section>
-
-
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About<span style="color: green;"> Me</span></h1>
-      <div class="section-container">
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <br />
-              <p>Freshers<br /><br />Frontend Development</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>
-                <strong>Bachelor in Computer Applications</strong><br />
-                First Year, Major in Computer Science<br />
-                Aadim National College <br />
-                <em>2024 - Present</em>
-                <!-- Adjust year as appropriate -->
-              </p>
-              <p>
-                <br />
-                <strong>High School</strong><br />
-                Major in Mathematics and Computer Science<br />
-                Aadim National College <br />
-                <em>Graduated: 2023</em>
-                <!-- Adjust year as appropriate -->
-              </p>
-            </div>
-          </div>
-          <div class="text-container" style="margin-top: 40px;">
-            <p>
-              Hello and welcome! Thank you for visiting my portfolio. I’m
-              Shroyash Shrestha, a dedicated Frontend Developer with a passion
-              for crafting dynamic and user-friendly digital experiences Through
-              this portfolio, I invite you to explore my skills, projects, and
-              achievements as I continue to grow and innovate in the world of
-              frontend development<br /><br />
-
-              I have dedicated myself to honing my craft and continually seeking
-              opportunities for growth and development. My journey in this field
-              has been filled with exciting challenges, valuable learning
-              experiences, and rewarding accomplishments. Throughout my career,
-              I have had the privilege of working on diverse projects,
-              collaborating with talented individuals, and solving real-world
-              problems. These experiences have not only expanded my knowledge
-              but also sharpened my ability to adapt to dynamic environments.
-            </p>
-          </div>
+    <section class="about-me">
+      <div class="section-title">
+        <h2>Get To Know More</h2>
+        <h3>About Me</h3>
+      </div>
+      <div class="container">
+        <div class="card">
+          <i class="fas fa-certificate"></i>
+          <h4>Experience</h4>
+          <p>Freshers</p>
+          <p>Frontend Development</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-users"></i>
+          <h4>Education</h4>
+          <p>Bachelor in Computer Applications</p>
+          <p>First Year, Major in Computer Science</p>
+          <p>Aadim National College (2024 - Present)</p><br>
+          <p>High School,Major in Mathematics and Computer Science</p>
+          <p>Aadim National College (Graduated: 2023)</p>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
+
+      <div>
+        <p style="margin-top: 50px; margin-bottom: 90px;">
+          Hello! I'm Shroyash Shrestha, a passionate frontend developer with expertise in React, Tailwind CSS, and TypeScript. I have successfully built several web applications, honing my skills in creating intuitive and responsive user interfaces. Currently, I'm expanding my knowledge by diving into data structures and algorithms to strengthen my problem-solving abilities. I’m eager to grow as a developer and take on new challenges, with the goal of becoming a well-rounded full-stack developer.
+        </p>
+      </div>
     </section>
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
+    
+    
+
+    <section id="experience ">
+      <p class="section__text__p1" style="margin-top: -20px;">Explore My</p>
       <h1 class="title" style="color: green ; margin-bottom: 30px;">Skills</h1>
       <div class="experience-details-container">
         <div class="skill-set-container">
@@ -315,18 +282,13 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+     
     </section>
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title" style="color: green;margin-bottom: 50px;">Projects</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
+        <div class="about-containers" >
           <div class="details-container color-container">
             <div class="article-container">
               <img
@@ -432,12 +394,7 @@
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+      
     </section>
     <section id="contact">
       <p class="section__text__p1" style="margin-top: 40px;">Get in Touch</p>

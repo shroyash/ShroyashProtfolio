@@ -52,16 +52,19 @@
  
 }
 @media screen and (max-width: 1024px){
+  
+  .about-containers{
+    display: grid;
+    grid-template-columns: repeat(2,1r);
+  }
   .recipeImg img{
     width: 300px;
     height: 350px;
     object-fit: cover;
   }
-
+ 
 }
-@media screen and (max-width: 1024px){
 
-}
 
 @media screen and (max-width: 600px) {
    

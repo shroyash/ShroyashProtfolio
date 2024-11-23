@@ -197,7 +197,8 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
+  padding-top: 1.6vh;
+  padding-bottom:2vh ;
   height: 96vh;
   margin: 0 10rem;
   box-sizing: border-box;
@@ -205,9 +206,7 @@ section {
 }
 
 .section-container {
-  display: flex;
-  margin-top: 120px;
-  
+  display: flex;  
 }
 
 /* PROFILE SECTION */
@@ -313,62 +312,16 @@ section {
 
 /* ABOUT SECTION */
 
-#about {
-  position: relative;
-}
 
-.about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-}
 
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
 
-.about-containers,
-.about-details-container {
-  display: flex;
-}
 
-.about-pic {
-  border-radius: 2rem;
-}
 
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
-}
 
-.details-container {
-  padding: 1.5rem;
-  flex: 1;
-  background: white;
-  border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
-  text-align: center;
-}
-
-.section-container {
-  gap: 4rem;
-  height: 80%;
-}
-
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-}
 
 /* EXPERIENCE SECTION */
 
-#experience {
-  padding-top: 50px;
-  padding-bottom: 130px;
-}
+
 
 .experience-sub-title {
   color: rgb(85, 85, 85);
@@ -423,10 +376,7 @@ article .icon {
 
 /* PROJECTS SECTION */
 
-#projects {
-  position: relative;
-  margin-top: -50px;
-}
+
 
 .color-container {
   border-color: rgb(163, 163, 163);
@@ -498,4 +448,89 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+.about-containers {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* Default for small screens (1 column) */
+  gap: 20px; /* Optional: adjust space between items */
+  row-gap: 100px;
+}
+.experience-sub-title{
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .about-containers {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on small screens */
+  }
+}
+
+@media (min-width: 768px) {
+  .about-containers {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+  }
+}
+
+@media (min-width: 992px) {
+  .about-containers {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns on large screens */
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-containers {
+    grid-template-columns: repeat(2, 1fr); /* 3 columns on extra large screens */
+  }
+}
+
+.about-me {
+  text-align: center;
+  padding: 10px;
+}
+
+.section-title h2 {
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.section-title h3 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-top: -15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 110px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  padding: 60px;
+  border-radius: 70px;
+  width: 800px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+.card i {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #4CAF50;
+}
+
+.card h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 16px;
+  color: #333;
 }
