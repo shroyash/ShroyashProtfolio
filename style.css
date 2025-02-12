@@ -48,10 +48,7 @@ nav {
   color: black;
 }
 
-a {
-  color: black;
-  text-decoration: none;
-}
+
 
 a:hover {
   color: grey;
